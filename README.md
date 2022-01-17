@@ -61,6 +61,7 @@ You will be running your tests in one terminal and debugging in the other. As yo
 Edit the `ReadMe` file with your answers to the questions below.
 
 1. In your own words, define closure (1-2 sentences).
+  Closure is defining variables and declaring functions within other variables so that they can be only accessed going down the line of scope. 
 2. Study the following code, then answer the questions below.
 
 ```js
@@ -82,8 +83,11 @@ dansRoll();
 ```
 
 a. Where is closure used in this code? How can you tell?
+  Within the function personalDice, there are no global variables being accessed. 
 b. Compare and contrast calling `dansRoll` the first and second time. What is always the same? What could change?
+    Setting the personalDice function to the const of dansRoll and zoesRoll will not create a new instance of the function, but will keep the same value after the function has been called once. However passing a name as an argument into the original function that is built using closure will ensure that a random number has been created every time. 
 c. What is the lexical scope of `newRoll`? 
+    It can reference only down, so it is very limited in scope. 
 
 
 ### Task 3 - Stretch Goals
